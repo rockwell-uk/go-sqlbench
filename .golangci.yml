@@ -1,0 +1,109 @@
+linters:
+  enable:
+  - asasalint
+  - asciicheck
+  - bidichk
+  - bodyclose
+  - containedctx
+  - contextcheck
+  - decorder
+  - depguard
+  - dogsled
+  - dupword
+  - durationcheck
+  - errcheck
+  - errchkjson
+  - errname
+  - errorlint
+  - exhaustive
+  - exportloopref
+  - forbidigo
+  - forcetypeassert
+  - gci
+  - gocheckcompilerdirectives
+  - goconst
+  - gocritic
+  - godot
+  - goerr113
+  - gofmt
+  - goimports
+  - gomodguard
+  - goprintffuncname
+  - gosec
+  - gosimple
+  - govet
+  - grouper
+  - importas
+  - ineffassign
+  - interfacebloat
+  - ireturn
+  - loggercheck
+  - misspell
+  - nakedret
+  - nilerr
+  - noctx
+  - nolintlint
+  - nosprintfhostport
+  - prealloc
+  - predeclared
+  - promlinter
+  - reassign
+  - staticcheck
+  - tagliatelle
+  - tenv
+  - testableexamples
+  - thelper
+  - typecheck
+  - unconvert
+  - unparam
+  - unused
+  - usestdlibvars
+  - wastedassign
+  - whitespace
+  disable:
+  - cyclop
+  - dupl
+  - execinquery
+  - exhaustruct
+  - funlen
+  - ginkgolinter
+  - gochecknoglobals
+  - gochecknoinits
+  - gocognit
+  - gocyclo
+  - godox
+  - gofumpt
+  - goheader
+  - gomnd
+  - gomoddirectives
+  - lll
+  - maintidx
+  - makezero
+  - nestif
+  - nlreturn
+  - nonamedreturns
+  - paralleltest
+  - revive
+  - rowserrcheck
+  - sqlclosecheck
+  - stylecheck
+  - testpackage
+  - tparallel
+  - varnamelen
+  - wrapcheck
+  - wsl
+
+linters-settings:
+  gci:
+    sections:
+    - standard
+    - default
+    - prefix(go-sqlbench,github.com/rockwell-uk/go-sqlbench)
+  goimports:
+    local-prefixes: go-sqlbench,github.com/rockwell-uk/go-sqlbench
+
+issues:
+  exclude-rules:
+  - linters:
+    - goerr113
+    text: "do not define dynamic errors, use wrapped static errors instead"
