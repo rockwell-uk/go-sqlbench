@@ -7,7 +7,7 @@ require (
 	github.com/lib/pq v1.10.7
 	github.com/rockwell-uk/go-progress v1.0.0
 	github.com/rockwell-uk/go-utils v1.0.0
-	github.com/twpayne/go-geom v1.5.1
+	github.com/twpayne/go-geom v1.5.2
 )
 
 require (
